@@ -94,6 +94,8 @@ MonoBehaviour:
   horizontalCoordinate: 0
   verticalCoordinate: 0
   hexState: 0
+  isSecondLevel: 0
+  Landscape: {fileID: 8434018787174728638}
 --- !u!1 &1497882328007584606
 GameObject:
   m_ObjectHideFlags: 0

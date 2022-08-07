@@ -36,4 +36,22 @@ public class FieldManager : MonoBehaviour
         }
         
     }
+
+    private void CreateActiveHexesArray()
+    {
+        foreach ( BattleHex hex in allHexesArray)
+        {
+            if(hex.transform.position.x > 11.3f |
+                hex.transform.position.x < -11.3f |
+                hex.transform.position.y > 6.2f |
+                hex.transform.position.y < -6.2f)
+            {
+                hex.MakeMeInactive();
+            }
+            else
+            {
+                hex.MakeMeActive();
+            }
+        }
+    }
 }
